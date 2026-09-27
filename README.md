@@ -1,6 +1,6 @@
-# decision_bakeoff
+﻿# decision_bakeoff
 
-Offline / shadow evaluation of decision architectures **A0–A5** across five
+Offline / shadow evaluation of decision architectures **A0â€“A5** across five
 problem types. Stdlib-first; no GPU or network required for the smoke path.
 
 ## Architectures
@@ -18,7 +18,7 @@ problem types. Stdlib-first; no GPU or network required for the smoke path.
 
 ## Problem types
 
-`route` · `retrieve_rerank` · `bon_verify` · `triage` · `guided_questionnaire`
+`route` Â· `retrieve_rerank` Â· `bon_verify` Â· `triage` Â· `guided_questionnaire`
 
 ## Quick start
 
@@ -43,7 +43,7 @@ decision_bakeoff/
   metrics.py         # top-1, nDCG@K, pick-gold, ECE stub, latency, EPC
   harness.py         # fit + eval + report writer
   __main__.py        # CLI
-  deciders/          # members + A0–A5
+  deciders/          # members + A0â€“A5
 data/samples/*.jsonl
 docs/EVAL_PROTOCOL.md
 tests/test_smoke.py
@@ -53,7 +53,7 @@ tests/test_smoke.py
 
 **Do not** reuse thresholds or weights tuned on a foreign dataset, tenant, or
 holdout fold without a fresh local `calib` fit. This repo is an offline shadow
-bakeoff only — it is not a trading system and must not be wired to market
+bakeoff only â€” it is not a trading system and must not be wired to market
 execution paths.
 
 See [docs/EVAL_PROTOCOL.md](docs/EVAL_PROTOCOL.md) for splits, metrics, and
@@ -61,4 +61,5 @@ the MockCLM plug-in point.
 
 ## License
 
-Internal / evaluation use.
+MIT — see [LICENSE](LICENSE).
+
