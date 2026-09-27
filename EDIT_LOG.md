@@ -9,3 +9,8 @@
 - **Files:** decision_bakeoff/deciders/__init__.py, base.py, members.py, arch.py; CHANGELOG.md
 - **What:** Decider protocol; members RouterBaseline, CosineDecider (B2), MockCLMDecider (C0); architectures A0–A5 (RouterBaseline, FlatMean, ZScoreMean, StackedGate, MixtureOfDeciders, AdapterBank).
 - **Why:** Second logical chunk — scoring backends before harness/data.
+
+## 2026-09-27 08:53:27 CDT
+- **Files:** data/samples/*.jsonl (5 files); CHANGELOG.md
+- **What:** Synthetic ≥20 examples per problem type (route, retrieve_rerank, bon_verify, triage, guided_questionnaire) with train/calib/shadow/holdout splits; guided_questionnaire includes questions[].
+- **Why:** Third logical chunk — offline smoke data for harness.
