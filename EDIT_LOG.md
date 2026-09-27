@@ -19,3 +19,8 @@
 - **Files:** decision_bakeoff/harness.py, decision_bakeoff/__main__.py; CHANGELOG.md
 - **What:** Eval harness (fit calib, score shadow/holdout, metrics.json + report.md) and CLI `python -m decision_bakeoff run --data ... --arch A0,A1,...`.
 - **Why:** Fourth logical chunk — runnable bakeoff entrypoint.
+
+## 2026-09-27 08:54:07 CDT
+- **Files:** tests/test_smoke.py, docs/EVAL_PROTOCOL.md, README.md, .gitignore, results/.gitkeep; CHANGELOG.md
+- **What:** Smoke tests, eval protocol docs, architecture-table README with foreign-tuning warning, gitignore for generated results.
+- **Why:** Fifth logical chunk — docs/tests polish and success criteria coverage.
