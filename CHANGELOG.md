@@ -12,3 +12,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Decider protocol and members (RouterBaseline, CosineDecider, MockCLMDecider).
 - Architectures A0–A5 with calib `fit()` where applicable.
 - Synthetic sample JSONL under `data/samples/` (≥20/type, all splits).
+- Eval harness writing `results/<timestamp>/report.md` and `metrics.json`.
+- CLI: `python -m decision_bakeoff run`.
